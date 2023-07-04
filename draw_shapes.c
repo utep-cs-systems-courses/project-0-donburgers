@@ -26,10 +26,12 @@ void print_triangle(int leftCol, int size)
   }
 }
 
-void print_arrow(int leftCol, int size) {
-
-  print_triangle(leftCol, size);
-  for(int i=0; i<(size/3); i++) {
-    print_square((leftCol*2)+2,(size/2));
-}
+// Prints an arrow by using print_triangle fuction to create the arrow head
+// print_square fuction to create the body of the arrow
+void print_arrow(int leftCol, int size) 
+{
+  print_triangle(leftCol, size); // Prints Arrowhead
+  int square_start_col = leftCol + size/2+2; //Position of the square, adjusting from the center of the triangle
+  print_square(square_start_col, size); //Prints body of the arrow
+  putchar('\n'); // Adds a newline at the end of the arrow shape
 }
