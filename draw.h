@@ -4,9 +4,8 @@
 // Function prototypes for drawing different shapes
 void print_triangle(int startCol, int size);
 void print_square(int startCol, int size);
-void print_arrow(int startCol, int size);
+void print_arrow();
 void print_char_11x16(char c);
-void print_char_8x12(char c);
 void print_char_5x7(char c);
 
 
